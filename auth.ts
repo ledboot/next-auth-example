@@ -55,7 +55,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [
     Google,
   ],
-  //basePath: "/auth",
+  basePath: "/auth",
   session: { strategy: "jwt" },
   callbacks: {
     authorized({ request, auth }) {

@@ -46,7 +46,7 @@ const storage = createStorage({
   //       env: false,
   //     })
   //   : memoryDriver(),
-  driver: memoryDriver,
+  driver: memoryDriver(),
 })
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
